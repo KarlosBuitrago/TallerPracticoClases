@@ -2,58 +2,108 @@ package co.carlos.firstPackage;
 
 import java.util.*;
 
+/**
+ * Clase persona con los atributos
+ * name
+ * lastName1
+ * lastName2
+ * dateBirth
+ * heigth
+ */
 public class Persona {
 
     public String name;
     public String lastName1;
-    public String lastname2;
+    public String lastName2;
     public Date dateBirth;
     public float heigth;
 
     public Persona() {
     }
 
+    /**
+     * metodo que retorna el nombre
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Este metodo asigna el name a la variable name
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
-
+    /**
+     * metodo que retorna el lastName1
+     * @return
+     */
     public String getLastName1() {
         return lastName1;
     }
-
+    /**
+     * Este metodo asigna el name a la variable name
+     * @param lastName1
+     */
     public void setLastName1(String lastName1) {
         this.lastName1 = lastName1;
     }
-
-    public String getLastname2() {
-        return lastname2;
+    /**
+     * metodo que retorna el lastName2
+     * @return
+     */
+    public String getLastName2() {
+        return lastName2;
+    }
+    /**
+     * Este metodo asigna el name a la variable name
+     * @param lastName2
+     */
+    public void setLastName2(String lastName2) {
+        this.lastName2 = lastName2;
     }
 
-    public void setLastname2(String lastname2) {
-        this.lastname2 = lastname2;
-    }
-
+    /**
+     * Este metodo retorna la fecha de cumpleaños
+     * @return
+     */
     public Date getDateBirth() {
         return dateBirth;
     }
 
+    /**
+     * Asigna la fecha de Cumpleaños a la variable dateBirth
+     * @param dateBirth
+     */
     public void setDateBirth(Date dateBirth) {
         this.dateBirth = dateBirth;
     }
 
+    /**
+     * retorna la variable heigth
+     * @return
+     */
     public float getHeigth() {
         return heigth;
     }
 
+    /**
+     * se asigna el valor de heigth a la variable heigth
+     * @param heigth
+     */
     public void setHeigth(float heigth) {
         this.heigth = heigth;
     }
 }
 
+/**
+ * Clase clase fruta con los atributos
+ * name
+ * averageWeight
+ * colors
+ */
 class Fruta{
     public String name;
     private float averageWeight;
@@ -87,8 +137,13 @@ class Fruta{
     }
 }
 
+/**
+ * Clase cuenta bancaria con los atributos
+ * accountNumber
+ * activated
+ */
 class CuentaBancaria{
-    private int AccountNumber;
+    private int accountNumber;
     protected boolean activated;
 
     public CuentaBancaria() {
@@ -103,23 +158,34 @@ class CuentaBancaria{
     }
 
     public int getAccountNumber() {
-        return AccountNumber;
+        return accountNumber;
     }
 
     public void setAccountNumber(int accountNumber) {
-        AccountNumber = accountNumber;
+        this.accountNumber = accountNumber;
     }
 
 }
 
+/**
+ * Clase avion con los atributos
+ * name
+ * color
+ * numberPassenger
+ * numberTires;
+ * numberDoors
+ * numberWindows;
+ */
 class Plane {
     private String name;
     private String color;
     private int numberPassanger;
     private int numberTires;
     private int numberDoors;
+    public int numberWindows;
 
     public Plane() {
+        this.numberWindows = 150;
     }
 
     public String getName() {
@@ -163,11 +229,18 @@ class Plane {
     }
 }
 
+/**
+ * Esta es una clase Television con los atributos
+ * ScreeSize
+ * color
+ * mark
+ * weight
+ */
 class Television{
 
     public int ScreenSize;
     private String color;
-    private String Mark;
+    private String mark;
     private int weight;
 
     public Television() {
@@ -182,11 +255,11 @@ class Television{
     }
 
     public String getMark() {
-        return Mark;
+        return mark;
     }
 
     public void setMark(String mark) {
-        Mark = mark;
+        this.mark = mark;
     }
 
     public int getWeight() {
@@ -198,25 +271,32 @@ class Television{
     }
 }
 
+/**
+ * Clase Phote Mobile con los atributos
+ * mark
+ * color
+ * model
+ * ScreenSize
+ */
 class phoneMobile {
-    private String Mark;
+    private String mark;
     private String color;
     private String Model;
     private double ScreenSize;
 
     public phoneMobile() {
-        this.Mark = "Samsung";
+        this.mark = "Samsung";
         this.color = "Blue";
         this.Model = "A10";
         this.ScreenSize = 6.5;
     }
 
     public String getMark() {
-        return Mark;
+        return mark;
     }
 
     public void setMark(String mark) {
-        Mark = mark;
+        this.mark = mark;
     }
 
     public String getColor() {
